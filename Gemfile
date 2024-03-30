@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 ruby "3.3.0"
 
+# https://github.com/bkeepers/dotenv
 gem "dotenv", "~> 2.1", ">= 2.1.1", groups: [:development, :test]
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -49,6 +50,12 @@ gem "bootsnap", require: false
 # CSS
 gem "bootstrap"
 gem "sassc-rails"
+
+# Auth
+gem "devise"
+gem "omniauth"
+gem "omniauth-google-oauth2"
+gem "omniauth-rails_csrf_protection"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
